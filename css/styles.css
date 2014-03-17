@@ -1,9 +1,16 @@
 body, html {
+font-family: 'Arvo', serif;
 padding: 0;
 text-align: center;
 background: black;
-color: white;
+color: yellow;
 margin: 1em;
+}
+
+section img {
+	margin-bottom: 20px;
+	margin-top: -5px;
+	height: 100px;
 }
 
 a.lightbox img {
