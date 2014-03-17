@@ -22,6 +22,7 @@ border: solid 1px yellow;
 }
 
 .lightbox-target {
+z-index: 100;
 position: fixed;
 -webkit-filter: sepia(0.0);
 opacity: 1;
