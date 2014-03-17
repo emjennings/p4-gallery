@@ -6,34 +6,29 @@ color: white;
 margin: 1em;
 }
 
-img {
-	height: 150px;
-	width: 200px;
-	border: solid 1px gray;
-	-webkit-filter: sepia(0.9);
-	opacity: .75;
-}
-
-img:hover {
-	-webkit-filter: blur(0px) sepia(0.0);
-	opacity: 1;
-	border: solid 1px yellow;
-}
-
 a.lightbox img {
 height: 150px;
-border: 3px solid white;
+width: 200px;
+-webkit-filter: sepia(0.9);
+opacity: .75;
 box-shadow: 0px 0px 8px rgba(0,0,0,.3);
 margin: 20px;
 }
 
+.lightbox img:hover {
+-webkit-filter: sepia(0.0);
+opacity: 1;
+border: solid 1px yellow;
+}
+
 .lightbox-target {
 position: fixed;
+-webkit-filter: sepia(0.0);
+opacity: 1;
 top: -100%;
 width: 100%;
 background: rgba(0,0,0,.7);
 width: 100%;
-opacity: 0;
 -webkit-transition: opacity .5s ease-in-out;
 -moz-transition: opacity .5s ease-in-out;
 -o-transition: opacity .5s ease-in-out;
@@ -43,6 +38,7 @@ overflow: hidden;
 
 .lightbox-target img {
 margin: auto;
+opacity: 1;
 position: absolute;
 top: 0;
 left:0;
@@ -50,7 +46,7 @@ right:0;
 bottom: 0;
 max-height: 0%;
 max-width: 0%;
-border: 3px solid white;
+border: solid 1px black;
 box-shadow: 0px 0px 8px rgba(0,0,0,.3);
 box-sizing: border-box;
 -webkit-transition: .5s ease-in-out;
@@ -58,6 +54,7 @@ box-sizing: border-box;
 -o-transition: .5s ease-in-out;
 transition: .5s ease-in-out;
 }
+
 a.lightbox-close {
 display: block;
 width:50px;
@@ -121,25 +118,6 @@ top: 0px;
 }
 
 
-
-
-
-
-
-
-body {
-	background: black;
-	color: white;
-	margin: 1em;
-}
-
-.image {
-	display: none;
-}
-
-.image:hover {
-	border: none;
-}
 
 
 
